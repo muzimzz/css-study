@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>부모-자식 선택자</title>
+    <meta charset="UTF-8">
+    <style>
+      ul li{
+        color:red;
+        text-decoration: underline;
+      }
+      #lecture>li{
+        border:1px solid blue;
+        color:green;
+      }
+      ul, ol{
+        background-color: powderblue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>A B: A 하위의 B태그에 style 적용</p>
+    <p>A&gt;B: A 바로 한단계 하위에 있는 B태그에만 style 적용</p>
+    <p>A, B: A와 B에 둘다 style 적용</p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+    </ul>   
+    <ol id="lecture">
+      <li>C</li>
+        <ol>
+          <li>구조체</li>
+          <li>포인터</li>
+          <li>동적할당</li>
+        </ol>
+      <li>Java</li>
+      <li>Python</li>
+      <li>C++</li>
+    </ol>
+  </body>
+</html>
