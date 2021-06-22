@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>수도(pseudo) 클래스</title>
+    <meta charset="UTF-8">
+    <style>
+      a:link{
+        color:purple;
+      }
+      a:visited{
+        color:red;
+      }
+      a:active{
+        color:green;
+      }
+      a:hover{
+        color:yellow;
+      }
+      a:focus{
+        color:gray;
+      }
+    </style>
+  </head>
+  <body>
+    <pre>
+      a:link{     (link: 링크텍스트)
+        color:purple;
+      }
+      a:visited{  (visited: 방문한 링크텍스트)
+        color:red;
+      }
+      a:active{   (active: 마우스를 누르고 있을 때)
+        color:green;
+      }
+      a:hover{    (hover: 마우스를 올리고 있을 때)
+        color:yellow;
+      }
+      a:focus{    (focus: TAB을 눌러보세요, 가장 뒤에 넣는게 좋다)
+        color:gray;
+      }
+      
+
+      ※ hover와 active를 동시에 시도한다면 뒤쪽에 있는 hover 적용
+    </pre>
+    <hr>
+    <a href="0. hello world.html">방문함</a>
+    <a href="a.a">방문 안함</a>
+  </body>
+</html>
