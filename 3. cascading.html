@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>캐스케이딩</title>
+    <meta charset="UTF-8">
+    <style>
+      li{color:red;}
+      #idsel{color:blue;}
+      .classsel{color:green;}
+    </style>
+  </head>
+  <body>
+    <h1>캐스케이딩(cascading)이란??</h1>
+    <pre>
+      본래 뜻은 '위에서 아래로 흐르는', 상속 또는 종속하는' 이라는
+      의미를 갖고 있다. 이는 선택자에 적용된 여러 스타일 중 
+    </pre>
+
+    <h2>수업내용</h2>
+    <ul>
+      <li>HTML</li>
+      <li id="idsel" class="classsel" style="color:powderblue">CSS</li>
+      <li>Javascript</li>
+    </ul>
+    <pre>
+      위의 코드는
+      
+      &lt;style&gt;
+        li{color:red;}  (4순위)
+        #idsel{color:blue;}  (2순위)
+        .classsel{color:green;}  (3순위)
+      &lt;/style&gt;
+
+      &lt;li id="idsel" class="classsel" 
+      style="color:powderblue"&gt;CSS&lt;/li&gt; (1순위)
+      로 되어있다
+    </pre>
+    <br>
+    <h2>캐스케이딩 (스타일 우선순위)</h2>
+    <p>구체적/명시적 일수록 우선순위가 높다</p>
+    <ol>
+      <li>!important (우선순위 강제 ↑)</li>
+      <li>style attribute</li>
+      <li>id selector(id는 중복x)</li>
+      <li>class selector</li>
+      <li>tag selector</li>
+    </ol>
+  </body>
+</html>
