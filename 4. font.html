@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <title>폰트 속성</title>
+    <meta charset="UTF-8">
+    <style>
+      #px {font-size:16px;}
+      #rem {font-size:1rem;}
+      h1 {color: red;}
+      #test1 {
+        font-size:1rem;
+        font-family:Arial, Helvetica, sans-serif, monospace;
+        font-weight:bolder;
+        line-height:2;
+      }
+      #test2 {
+        font-family: 'Open Sans', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>font-size</h2>
+
+    <p>
+      단위로는 px(픽셀), em, rem이 있다. <br>
+      px로 지정된 폰트의 크기는 절대적으로 고정되어 있다.<br>
+      em, rem은 브라우저의 설정에 따라 폰트 크기가 달라진다.<br>
+      오늘날에는 사용자가 페이지의 폰트를 가변적으로 바꿀 수 있도록 rem 사용
+    </p>
+    <div id="px">PX</div>
+    <div id="rem">REM</div>
+    <p>chrome 설정-모양에서 글꼴 크기를 바꾸면 PX는 그대로, REM은 바뀌는 걸 볼 수 있다.</p>
+    <hr>
+    <h2>font-color</h2>
+    <h1>Hello World!</h1>
+    <p>&lt;h1&gt;Hello Wolrd!&lt;/h1&gt;에 폰트 색상(RED)을 부여하는 방법</p>
+    <ol>
+      <li>Color name</li>
+      h1 {color: red;}
+      <li>RGB</li>
+      h1 {color: rgb(255, 0, 0);}
+      <li>Hexadecimal color</li>
+      h1 {color: #FF0000;}
+    </ol>
+    <hr>
+    <h2>font-family, font-weight, line-height</h2>
+    font-family:Arial, Helvetica, sans-serif, monospace; (글꼴)<br>
+    font-weight:bolder; (폰트의 굵기)<br>
+    line-height:2; (줄 간격)<br><br>
+    font:bolder 1rem/2 arial, Helvetica, sans-serif, monospace; 로도 쓸 수 있음
+    <a href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=jinlk2&logNo=220633673171">
+    sans-serif란?</a><br>
+    <a href="https://www.codingfactory.net/10551">
+    monospace란? + 다른 속성들</a><br>
+    <p id="test1">
+      단위로는 px(픽셀), em, rem이 있다. <br>
+      px로 지정된 폰트의 크기는 절대적으로 고정되어 있다.<br>
+      em, rem은 브라우저의 설정에 따라 폰트 크기가 달라진다.<br>
+      오늘날에는 사용자가 페이지의 폰트를 가변적으로 바꿀 수 있도록 rem 사용
+    </p>
+    <hr>
+    <h2>web font</h2>
+    <p id="test2">웹 폰트는 직접 다운로드 받지 않아도 서버로부터 가져와 사용할 수 있다.<br>
+      <a href="https://fonts.google.com/">구글 웹 폰트</a>
+      Hello Wolrd! I am serin :)
+    </p>
+  </body>
+</html>
